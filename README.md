@@ -1,18 +1,85 @@
-# React + Vite
+# 📝 Aplicación de Tareas Domésticas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web interactiva para gestionar tareas domésticas, construida con **React 19** y **Vite**.
 
-Currently, two official plugins are available:
+## 🎯 Descripción del Proyecto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Una aplicación moderna que permite a los usuarios:
+- ✅ Añadir nuevas tareas domésticas
+- ✓ Marcar tareas como completadas
+- 🔍 Filtrar tareas por estado (Todas, Completadas, Pendientes)
+- 💾 Guardar automáticamente en localStorage
+- 🎨 Interfaz moderna con Material-UI
 
-## React Compiler
+## 🛠️ Tecnologías Utilizadas
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+- **React 19** - Biblioteca UI
+- **Vite** - Build tool y dev server
+- **Material-UI (MUI)** - Componentes y estilos
+- **localStorage** - Persistencia de datos
+- **PropTypes** - Validación de props
+- **CSS personalizado** - Estilos adicionales
 
-Note: This will impact Vite dev & build performances.
+## 📦 Estructura del Proyecto
 
-## Expanding the ESLint configuration
+```
+src/
+├── App.jsx                    # Componente principal
+├── assets/
+│   ├── components/
+│   │   ├── TaskForm/          # Formulario para añadir tareas
+│   │   ├── TaskList/          # Lista de tareas
+│   │   ├── TaskItem/          # Elemento individual de tarea
+│   │   └── FiltroTareas/      # Filtros de visualización
+│   └── hooks/
+│       ├── useLocalStorage.js # Hook para localStorage
+│       ├── useTareas.js       # Hook para gestionar tareas
+│       └── useFiltroTareas.js # Hook para filtrado
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Características Principales
+
+### Custom Hooks
+- **useLocalStorage** - Sincroniza estado con localStorage automáticamente
+- **useTareas** - Gestiona todo el estado de tareas y completadas
+- **useFiltroTareas** - Maneja el filtrado de tareas
+
+### Componentes Reutilizables
+- **TaskForm** - Entrada de nuevas tareas con validación
+- **TaskList** - Contenedor de tareas
+- **TaskItem** - Elemento individual con botón de marcar completada
+- **FiltroTareas** - Botones de filtrado con Material-UI
+
+## 📥 Instalación
+
+```bash
+# Clonar o descargar el proyecto
+cd tareas-del-hogar
+
+# Instalar dependencias
+npm install
+
+# Iniciar servidor de desarrollo
+npm run dev
+
+# Compilar para producción
+npm run build
+```
+
+## 💡 Buenas Prácticas Implementadas
+
+✓ Componentes funcionales con hooks  
+✓ Custom hooks reutilizables  
+✓ Separación de responsabilidades  
+✓ Lifting state up (estado en App)  
+✓ Validación con PropTypes  
+✓ localStorage para persistencia  
+✓ Uso de index.js para exportaciones limpias  
+
+## 📝 Licencia
+
+Este proyecto es de código abierto para fines educativos.
+
+---
+
+**Desarrollado como proyecto de aprendizaje de React avanzado** 🚀
