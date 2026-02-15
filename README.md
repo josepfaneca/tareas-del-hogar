@@ -68,13 +68,13 @@ npm run build
 
 ## 💡 Buenas Prácticas Implementadas
 
-✓ Componentes funcionales con hooks  
-✓ Custom hooks reutilizables  
-✓ Separación de responsabilidades  
-✓ Lifting state up (estado en App)  
-✓ Validación con PropTypes  
-✓ localStorage para persistencia  
-✓ Uso de index.js para exportaciones limpias  
+✓ Componentes funcionales con hooks
+✓ Custom hooks reutilizables
+✓ Separación de responsabilidades
+✓ Lifting state up (estado en App)
+✓ Validación con PropTypes
+✓ localStorage para persistencia
+✓ Uso de index.js para exportaciones limpias
 
 ## 📝 Licencia
 
@@ -82,4 +82,4 @@ Este proyecto es de código abierto para fines educativos.
 
 ---
 
-**Desarrollado como proyecto de aprendizaje de React avanzado** 🚀
+**Desarrollado como proyecto del curso 'Iniciación al desarrollo FrontEnd con React'** 🚀
