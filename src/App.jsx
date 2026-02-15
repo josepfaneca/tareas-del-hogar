@@ -1,18 +1,24 @@
+import { Suspense, lazy } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import MainLayout from './layouts/MainLayout'
-import HomePage from './pages/HomePage'
-import StatsPage from './pages/StatsPage'
-import AboutPage from './pages/AboutPage'
+import LoadingSpinner from './assets/components/LoadingSpinner'
 import './App.css'
+
+// Lazy load de páginas no críticas
+const HomePage = lazy(() => import('./pages/HomePage'))
+const StatsPage = lazy(() => import('./pages/StatsPage'))
+const AboutPage = lazy(() => import('./pages/AboutPage'))
 
 function App() {
   return (
     <MainLayout>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/estadisticas" element={<StatsPage />} />
-        <Route path="/acerca-de" element={<AboutPage />} />
-      </Routes>
+      <Suspense fallback={<LoadingSpinner />}>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/estadisticas" element={<StatsPage />} />
+          <Route path="/acerca-de" element={<AboutPage />} />
+        </Routes>
+      </Suspense>
     </MainLayout>
   )
 }
