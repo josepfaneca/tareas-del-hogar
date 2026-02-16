@@ -25,7 +25,7 @@ function HomePage() {
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={window.location.href} />
-        <canonical href={`${window.location.origin}/`} />
+        <link rel="canonical" href={`${window.location.origin}/`} />
       </Helmet>
 
       <div>

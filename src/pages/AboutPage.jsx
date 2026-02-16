@@ -14,7 +14,7 @@ function AboutPage() {
         <meta property="og:title" content="Acerca de - Gestor de Tareas" />
         <meta property="og:description" content="Información sobre nuestra aplicación de gestión de tareas." />
         <meta property="og:url" content={`${window.location.origin}/acerca-de`} />
-        <canonical href={`${window.location.origin}/acerca-de`} />
+        <link rel="canonical" href={`${window.location.origin}/acerca-de`} />
       </Helmet>
 
       <div className="about-container">

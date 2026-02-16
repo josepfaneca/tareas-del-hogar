@@ -20,8 +20,8 @@ function StatsPage() {
         <meta name="robots" content="index, follow" />
         <meta property="og:title" content="Estadísticas - Gestor de Tareas" />
         <meta property="og:description" content="Análisis detallado de tu productividad en tareas domésticas." />
-        <meta property="og:url" content={`${window.location.origin}/stats`} />
-        <canonical href={`${window.location.origin}/stats`} />
+        <meta property="og:url" content={`${window.location.origin}/estadisticas`} />
+        <link rel="canonical" href={`${window.location.origin}/estadisticas`} />
       </Helmet>
 
       <div className="stats-container">
