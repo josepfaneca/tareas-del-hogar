@@ -50,6 +50,7 @@ function AboutPage() {
             <li><strong>Vite:</strong> Build tool ultrarrápido</li>
             <li><strong>React Router:</strong> Navegación entre páginas</li>
             <li><strong>React Helmet:</strong> Gestión de meta tags para SEO</li>
+            <li><strong>Netlify:</strong> Despliegue continuo y hosting</li>
           </ul>
         </section>
       </div>
